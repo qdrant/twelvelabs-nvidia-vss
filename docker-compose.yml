@@ -1,0 +1,17 @@
+services:
+  vss-server:
+    image: nvcr.io/nvidia/metropolis/vss:1.0
+    ports:
+      - "8080:8080"
+    environment:
+      TWELVE_LABS_API_KEY: ${TWELVE_LABS_API_KEY}
+      VLM_MODEL_TO_USE: twelve-labs
+      DISABLE_CV_PIPELINE: "false"
+      DISABLE_CA_RAG: "false"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
