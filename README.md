@@ -112,3 +112,8 @@ chunk_video()          # FFmpeg segment muxer -> N x ~30s chunks
 ```
 
 The Marengo embedding (1024-dim) can be indexed into [Qdrant](https://qdrant.tech) for kNN-based anomaly detection. See [qdrant/video-anomaly-edge](https://github.com/qdrant/video-anomaly-edge) for a complete production implementation.
+---
+
+## Credits
+
+Built on top of original work by [Nathan Chess](https://github.com/nathanchess) ([nathanchess/twelvelabs-nvidia-vss-sample](https://github.com/nathanchess/twelvelabs-nvidia-vss-sample)) and [James Le](https://github.com/james-le-twelve-labs) ([james-le-twelve-labs/nvidia-vss](https://github.com/james-le-twelve-labs/nvidia-vss)).
